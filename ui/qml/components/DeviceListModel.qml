@@ -49,6 +49,13 @@ ListModel {
     }
 
     ListElement {
+        deviceType: "Amazfit GTS 2 mini"
+        icon: "../pics/devices/amazfit-gts2.png"
+        auth: true
+        pattern: "^Amazfit GTS 2 mini$"
+    }
+
+    ListElement {
         deviceType: "Amazfit GTR 3 Pro"
         icon: "../pics/devices/amazfit-gtr3.png"
         auth: true
@@ -106,6 +113,13 @@ ListModel {
         icon: "../pics/devices/amazfit-balance.png"
         auth: true
         pattern: "^Amazfit Balance$"
+    }
+
+    ListElement {
+        deviceType: "Amazfit Active Max"
+        icon: "../pics/devices/amazfit-balance.png"
+        auth: true
+        pattern: "^Amazfit Active Max$"
     }
 
     ListElement {

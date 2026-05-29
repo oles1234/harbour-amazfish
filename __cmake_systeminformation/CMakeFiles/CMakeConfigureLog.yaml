@@ -1,0 +1,563 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      The system is: Linux - 6.17.0-29-generic - aarch64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is GNU, found in:
+        /home/oles/sailfish/app-sources/harbour-amazfish/__cmake_systeminformation/CMakeFiles/3.27.1/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is GNU, found in:
+        /home/oles/sailfish/app-sources/harbour-amazfish/__cmake_systeminformation/CMakeFiles/3.27.1/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/home/oles/sailfish/app-sources/harbour-amazfish/__cmake_systeminformation/CMakeFiles/CMakeScratch/TryCompile-bKewud"
+      binary: "/home/oles/sailfish/app-sources/harbour-amazfish/__cmake_systeminformation/CMakeFiles/CMakeScratch/TryCompile-bKewud"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/oles/sailfish/app-sources/harbour-amazfish/__cmake_systeminformation/CMakeFiles/CMakeScratch/TryCompile-bKewud'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3b207/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_3b207.dir/build.make CMakeFiles/cmTC_3b207.dir/build
+        make[1]: Entering directory '/home/oles/sailfish/app-sources/harbour-amazfish/__cmake_systeminformation/CMakeFiles/CMakeScratch/TryCompile-bKewud'
+        Building C object CMakeFiles/cmTC_3b207.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -o CMakeFiles/cmTC_3b207.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+        Using built-in specs.
+        COLLECT_GCC=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/aarch64-meego-linux-gnu-cc
+        Target: aarch64-meego-linux-gnu
+        Configured with: ../configure --prefix=/opt/cross --mandir=/opt/cross/share/man --disable-bootstrap --with-bugurl=https://git.sailfishos.org/ --build=i486-meego-linux --with-isl=/home/abuild/rpmbuild/BUILD/gcc-arm-src-snapshot-10.3-2021.07/obj-i486-meego-linux/isl-install --host=i486-meego-linux --target=aarch64-meego-linux-gnu --with-sysroot=/opt/cross/aarch64-meego-linux-gnu/sys-root --disable-multilib --disable-multilib --enable-checking=release --disable-fixed-point --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-lto --enable-linker-build-id --disable-libmpx --enable-languages=c,c++,lto --enable-threads=posix --enable-shared --disable-libgcj --disable-libcilkrts --enable-gnu-indirect-function --with-arch=armv8-a --build=i486-meego-linux
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1) (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3b207.dir/CMakeCCompilerABI.c.o' '-c' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib' '-I' '/usr/include' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64'
+         /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/cc1 -quiet -v -I /usr/include -iprefix /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/ -isysroot / /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=armv8-a -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_3b207.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccyRSWuY.s
+        GNU C17 (GCC) version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1) (aarch64-meego-linux-gnu)
+        	compiled by GNU C version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/../../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include"
+        ignoring duplicate directory "/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/../../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include-fixed"
+        ignoring duplicate directory "/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/../../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include"
+        ignoring duplicate directory "/usr/include"
+          as it is a non-system directory that duplicates a system directory
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include
+         /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include-fixed
+         /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        GNU C17 (GCC) version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1) (aarch64-meego-linux-gnu)
+        	compiled by GNU C version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 00000000000000000000000000000000
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3b207.dir/CMakeCCompilerABI.c.o' '-c' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib' '-I' '/usr/include' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64'
+         as -v -I /usr/include -EL -march=armv8-a -mabi=lp64 -o CMakeFiles/cmTC_3b207.dir/CMakeCCompilerABI.c.o /tmp/ccyRSWuY.s
+        GNU assembler version 2.42 (aarch64-meego-linux-gnu) using BFD version (GNU Binutils) 2.42
+        COMPILER_PATH=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/
+        LIBRARY_PATH=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3b207.dir/CMakeCCompilerABI.c.o' '-c' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib' '-I' '/usr/include' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64'
+        Linking C executable cmTC_3b207
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b207.dir/link.txt --verbose=1
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_3b207.dir/CMakeCCompilerABI.c.o -o cmTC_3b207 
+        Using built-in specs.
+        COLLECT_GCC=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/aarch64-meego-linux-gnu-cc
+        COLLECT_LTO_WRAPPER=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/lto-wrapper
+        Target: aarch64-meego-linux-gnu
+        Configured with: ../configure --prefix=/opt/cross --mandir=/opt/cross/share/man --disable-bootstrap --with-bugurl=https://git.sailfishos.org/ --build=i486-meego-linux --with-isl=/home/abuild/rpmbuild/BUILD/gcc-arm-src-snapshot-10.3-2021.07/obj-i486-meego-linux/isl-install --host=i486-meego-linux --target=aarch64-meego-linux-gnu --with-sysroot=/opt/cross/aarch64-meego-linux-gnu/sys-root --disable-multilib --disable-multilib --enable-checking=release --disable-fixed-point --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-lto --enable-linker-build-id --disable-libmpx --enable-languages=c,c++,lto --enable-threads=posix --enable-shared --disable-libgcj --disable-libcilkrts --enable-gnu-indirect-function --with-arch=armv8-a --build=i486-meego-linux
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1) (GCC) 
+        COMPILER_PATH=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/
+        LIBRARY_PATH=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3b207' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib' '-I' '/usr/include' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64'
+         /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/collect2 -plugin /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/liblto_plugin.so -plugin-opt=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cccyKmxl.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --no-add-needed --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_3b207 /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtbegin.o -L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib -L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1 -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib -v CMakeFiles/cmTC_3b207.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtend.o /usr/lib/../lib64/crtn.o
+        collect2 version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1)
+        /usr/bin/aarch64-meego-linux-gnu-ld -plugin /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/liblto_plugin.so -plugin-opt=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cccyKmxl.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --no-add-needed --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_3b207 /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtbegin.o -L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib -L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1 -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib -v CMakeFiles/cmTC_3b207.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtend.o /usr/lib/../lib64/crtn.o
+        GNU ld (GNU Binutils) 2.42
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3b207' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib' '-I' '/usr/include' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64'
+        make[1]: Leaving directory '/home/oles/sailfish/app-sources/harbour-amazfish/__cmake_systeminformation/CMakeFiles/CMakeScratch/TryCompile-bKewud'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include]
+          add: [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include-fixed]
+          add: [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include] ==> [/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc/aarch64-meego-linux-gnu/10.3.1/include]
+        collapse include dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include-fixed] ==> [/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc/aarch64-meego-linux-gnu/10.3.1/include-fixed]
+        collapse include dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include] ==> [/srv/mer/toolings/SailfishOS-latest/opt/cross/aarch64-meego-linux-gnu/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc/aarch64-meego-linux-gnu/10.3.1/include;/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc/aarch64-meego-linux-gnu/10.3.1/include-fixed;/srv/mer/toolings/SailfishOS-latest/opt/cross/aarch64-meego-linux-gnu/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/oles/sailfish/app-sources/harbour-amazfish/__cmake_systeminformation/CMakeFiles/CMakeScratch/TryCompile-bKewud']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_3b207/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_3b207.dir/build.make CMakeFiles/cmTC_3b207.dir/build]
+        ignore line: [make[1]: Entering directory '/home/oles/sailfish/app-sources/harbour-amazfish/__cmake_systeminformation/CMakeFiles/CMakeScratch/TryCompile-bKewud']
+        ignore line: [Building C object CMakeFiles/cmTC_3b207.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_3b207.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/aarch64-meego-linux-gnu-cc]
+        ignore line: [Target: aarch64-meego-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/opt/cross --mandir=/opt/cross/share/man --disable-bootstrap --with-bugurl=https://git.sailfishos.org/ --build=i486-meego-linux --with-isl=/home/abuild/rpmbuild/BUILD/gcc-arm-src-snapshot-10.3-2021.07/obj-i486-meego-linux/isl-install --host=i486-meego-linux --target=aarch64-meego-linux-gnu --with-sysroot=/opt/cross/aarch64-meego-linux-gnu/sys-root --disable-multilib --disable-multilib --enable-checking=release --disable-fixed-point --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-lto --enable-linker-build-id --disable-libmpx --enable-languages=c c++ lto --enable-threads=posix --enable-shared --disable-libgcj --disable-libcilkrts --enable-gnu-indirect-function --with-arch=armv8-a --build=i486-meego-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3b207.dir/CMakeCCompilerABI.c.o' '-c' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib' '-I' '/usr/include' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64']
+        ignore line: [ /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/cc1 -quiet -v -I /usr/include -iprefix /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/ -isysroot / /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -march=armv8-a -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_3b207.dir/CMakeCCompilerABI.c.o -version -o /tmp/ccyRSWuY.s]
+        ignore line: [GNU C17 (GCC) version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1) (aarch64-meego-linux-gnu)]
+        ignore line: [	compiled by GNU C version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1)  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/../../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include"]
+        ignore line: [ignoring duplicate directory "/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/../../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/../../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/usr/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include]
+        ignore line: [ /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include-fixed]
+        ignore line: [ /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C17 (GCC) version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1) (aarch64-meego-linux-gnu)]
+        ignore line: [	compiled by GNU C version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1)  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 00000000000000000000000000000000]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3b207.dir/CMakeCCompilerABI.c.o' '-c' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib' '-I' '/usr/include' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64']
+        ignore line: [ as -v -I /usr/include -EL -march=armv8-a -mabi=lp64 -o CMakeFiles/cmTC_3b207.dir/CMakeCCompilerABI.c.o /tmp/ccyRSWuY.s]
+        ignore line: [GNU assembler version 2.42 (aarch64-meego-linux-gnu) using BFD version (GNU Binutils) 2.42]
+        ignore line: [COMPILER_PATH=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_3b207.dir/CMakeCCompilerABI.c.o' '-c' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib' '-I' '/usr/include' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64']
+        ignore line: [Linking C executable cmTC_3b207]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b207.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/cc  -v -Wl -v CMakeFiles/cmTC_3b207.dir/CMakeCCompilerABI.c.o -o cmTC_3b207 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/aarch64-meego-linux-gnu-cc]
+        ignore line: [COLLECT_LTO_WRAPPER=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/lto-wrapper]
+        ignore line: [Target: aarch64-meego-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/opt/cross --mandir=/opt/cross/share/man --disable-bootstrap --with-bugurl=https://git.sailfishos.org/ --build=i486-meego-linux --with-isl=/home/abuild/rpmbuild/BUILD/gcc-arm-src-snapshot-10.3-2021.07/obj-i486-meego-linux/isl-install --host=i486-meego-linux --target=aarch64-meego-linux-gnu --with-sysroot=/opt/cross/aarch64-meego-linux-gnu/sys-root --disable-multilib --disable-multilib --enable-checking=release --disable-fixed-point --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-lto --enable-linker-build-id --disable-libmpx --enable-languages=c c++ lto --enable-threads=posix --enable-shared --disable-libgcj --disable-libcilkrts --enable-gnu-indirect-function --with-arch=armv8-a --build=i486-meego-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1) (GCC) ]
+        ignore line: [COMPILER_PATH=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3b207' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib' '-I' '/usr/include' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64']
+        link line: [ /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/collect2 -plugin /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/liblto_plugin.so -plugin-opt=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cccyKmxl.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --no-add-needed --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_3b207 /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtbegin.o -L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib -L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1 -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib -v CMakeFiles/cmTC_3b207.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtend.o /usr/lib/../lib64/crtn.o]
+          arg [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/cccyKmxl.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [--sysroot=/] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--no-add-needed] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_3b207] ==> ignore
+          arg [/usr/lib/../lib64/crt1.o] ==> obj [/usr/lib/../lib64/crt1.o]
+          arg [/usr/lib/../lib64/crti.o] ==> obj [/usr/lib/../lib64/crti.o]
+          arg [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtbegin.o] ==> obj [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtbegin.o]
+          arg [-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib] ==> dir [/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib]
+          arg [-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib] ==> dir [/srv/mer/targets/SailfishOS-5.0.0.62.default/lib]
+          arg [-L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1] ==> dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1]
+          arg [-L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc] ==> dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc]
+          arg [-L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64] ==> dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib] ==> dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_3b207.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--push-state] ==> ignore
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--pop-state] ==> ignore
+          arg [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtend.o] ==> obj [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtend.o]
+          arg [/usr/lib/../lib64/crtn.o] ==> obj [/usr/lib/../lib64/crtn.o]
+        ignore line: [collect2 version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1)]
+        ignore line: [/usr/bin/aarch64-meego-linux-gnu-ld -plugin /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/liblto_plugin.so -plugin-opt=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/cccyKmxl.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/ --build-id --no-add-needed --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_3b207 /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtbegin.o -L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib -L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1 -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib -v CMakeFiles/cmTC_3b207.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtend.o /usr/lib/../lib64/crtn.o]
+        ignore line: [GNU ld (GNU Binutils) 2.42]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_3b207' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib' '-I' '/usr/include' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64']
+        ignore line: [make[1]: Leaving directory '/home/oles/sailfish/app-sources/harbour-amazfish/__cmake_systeminformation/CMakeFiles/CMakeScratch/TryCompile-bKewud']
+        ignore line: []
+        ignore line: []
+        collapse obj [/usr/lib/../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtbegin.o] ==> [/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtbegin.o]
+        collapse obj [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtend.o] ==> [/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtend.o]
+        collapse obj [/usr/lib/../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib] ==> [/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib]
+        collapse library dir [/srv/mer/targets/SailfishOS-5.0.0.62.default/lib] ==> [/srv/mer/targets/SailfishOS-5.0.0.62.default/lib]
+        collapse library dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1] ==> [/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc/aarch64-meego-linux-gnu/10.3.1]
+        collapse library dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc] ==> [/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc]
+        collapse library dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64] ==> [/srv/mer/toolings/SailfishOS-latest/opt/cross/aarch64-meego-linux-gnu/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib] ==> [/srv/mer/toolings/SailfishOS-latest/opt/cross/aarch64-meego-linux-gnu/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtbegin.o;/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib;/srv/mer/targets/SailfishOS-5.0.0.62.default/lib;/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc/aarch64-meego-linux-gnu/10.3.1;/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc;/srv/mer/toolings/SailfishOS-latest/opt/cross/aarch64-meego-linux-gnu/lib64;/lib64;/usr/lib64;/srv/mer/toolings/SailfishOS-latest/opt/cross/aarch64-meego-linux-gnu/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/home/oles/sailfish/app-sources/harbour-amazfish/__cmake_systeminformation/CMakeFiles/CMakeScratch/TryCompile-PK9Qkc"
+      binary: "/home/oles/sailfish/app-sources/harbour-amazfish/__cmake_systeminformation/CMakeFiles/CMakeScratch/TryCompile-PK9Qkc"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/home/oles/sailfish/app-sources/harbour-amazfish/__cmake_systeminformation/CMakeFiles/CMakeScratch/TryCompile-PK9Qkc'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c3421/fast
+        /usr/bin/make  -f CMakeFiles/cmTC_c3421.dir/build.make CMakeFiles/cmTC_c3421.dir/build
+        make[1]: Entering directory '/home/oles/sailfish/app-sources/harbour-amazfish/__cmake_systeminformation/CMakeFiles/CMakeScratch/TryCompile-PK9Qkc'
+        Building CXX object CMakeFiles/cmTC_c3421.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -o CMakeFiles/cmTC_c3421.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+        Using built-in specs.
+        COLLECT_GCC=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/aarch64-meego-linux-gnu-c++
+        Target: aarch64-meego-linux-gnu
+        Configured with: ../configure --prefix=/opt/cross --mandir=/opt/cross/share/man --disable-bootstrap --with-bugurl=https://git.sailfishos.org/ --build=i486-meego-linux --with-isl=/home/abuild/rpmbuild/BUILD/gcc-arm-src-snapshot-10.3-2021.07/obj-i486-meego-linux/isl-install --host=i486-meego-linux --target=aarch64-meego-linux-gnu --with-sysroot=/opt/cross/aarch64-meego-linux-gnu/sys-root --disable-multilib --disable-multilib --enable-checking=release --disable-fixed-point --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-lto --enable-linker-build-id --disable-libmpx --enable-languages=c,c++,lto --enable-threads=posix --enable-shared --disable-libgcj --disable-libcilkrts --enable-gnu-indirect-function --with-arch=armv8-a --build=i486-meego-linux
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1) (GCC) 
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3421.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib' '-I' '/usr/include' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64'
+         /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/cc1plus -quiet -v -I /usr/include -iprefix /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/ -isysroot / -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=armv8-a -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_c3421.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccdB148V.s
+        GNU C++14 (GCC) version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1) (aarch64-meego-linux-gnu)
+        	compiled by GNU C version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        ignoring duplicate directory "/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/../../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include/c++/10.3.1"
+        ignoring duplicate directory "/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/../../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include/c++/10.3.1/aarch64-meego-linux-gnu"
+        ignoring duplicate directory "/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/../../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include/c++/10.3.1/backward"
+        ignoring duplicate directory "/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/../../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include"
+        ignoring duplicate directory "/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/../../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include-fixed"
+        ignoring duplicate directory "/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/../../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include"
+        ignoring duplicate directory "/usr/include"
+          as it is a non-system directory that duplicates a system directory
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include/c++/10.3.1
+         /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include/c++/10.3.1/aarch64-meego-linux-gnu
+         /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include/c++/10.3.1/backward
+         /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include
+         /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include-fixed
+         /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include
+         /usr/local/include
+         /usr/include
+        End of search list.
+        GNU C++14 (GCC) version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1) (aarch64-meego-linux-gnu)
+        	compiled by GNU C version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1), GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version none
+        GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+        Compiler executable checksum: 00000000000000000000000000000000
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3421.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib' '-I' '/usr/include' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64'
+         as -v -I /usr/include -EL -march=armv8-a -mabi=lp64 -o CMakeFiles/cmTC_c3421.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccdB148V.s
+        GNU assembler version 2.42 (aarch64-meego-linux-gnu) using BFD version (GNU Binutils) 2.42
+        COMPILER_PATH=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/
+        LIBRARY_PATH=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3421.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib' '-I' '/usr/include' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64'
+        Linking CXX executable cmTC_c3421
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3421.dir/link.txt --verbose=1
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_c3421.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c3421 
+        Using built-in specs.
+        COLLECT_GCC=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/aarch64-meego-linux-gnu-c++
+        COLLECT_LTO_WRAPPER=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/lto-wrapper
+        Target: aarch64-meego-linux-gnu
+        Configured with: ../configure --prefix=/opt/cross --mandir=/opt/cross/share/man --disable-bootstrap --with-bugurl=https://git.sailfishos.org/ --build=i486-meego-linux --with-isl=/home/abuild/rpmbuild/BUILD/gcc-arm-src-snapshot-10.3-2021.07/obj-i486-meego-linux/isl-install --host=i486-meego-linux --target=aarch64-meego-linux-gnu --with-sysroot=/opt/cross/aarch64-meego-linux-gnu/sys-root --disable-multilib --disable-multilib --enable-checking=release --disable-fixed-point --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-lto --enable-linker-build-id --disable-libmpx --enable-languages=c,c++,lto --enable-threads=posix --enable-shared --disable-libgcj --disable-libcilkrts --enable-gnu-indirect-function --with-arch=armv8-a --build=i486-meego-linux
+        Thread model: posix
+        Supported LTO compression algorithms: zlib zstd
+        gcc version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1) (GCC) 
+        COMPILER_PATH=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/
+        LIBRARY_PATH=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/:/lib/:/usr/lib/
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c3421' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib' '-I' '/usr/include' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64'
+         /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/collect2 -plugin /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/liblto_plugin.so -plugin-opt=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccun4dTi.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --no-add-needed --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_c3421 /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtbegin.o -L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib -L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1 -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib -v CMakeFiles/cmTC_c3421.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtend.o /usr/lib/../lib64/crtn.o
+        collect2 version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1)
+        /usr/bin/aarch64-meego-linux-gnu-ld -plugin /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/liblto_plugin.so -plugin-opt=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccun4dTi.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --no-add-needed --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_c3421 /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtbegin.o -L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib -L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1 -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib -v CMakeFiles/cmTC_c3421.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtend.o /usr/lib/../lib64/crtn.o
+        GNU ld (GNU Binutils) 2.42
+        COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c3421' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib' '-I' '/usr/include' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64'
+        make[1]: Leaving directory '/home/oles/sailfish/app-sources/harbour-amazfish/__cmake_systeminformation/CMakeFiles/CMakeScratch/TryCompile-PK9Qkc'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include/c++/10.3.1]
+          add: [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include/c++/10.3.1/aarch64-meego-linux-gnu]
+          add: [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include/c++/10.3.1/backward]
+          add: [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include]
+          add: [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include-fixed]
+          add: [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include]
+          add: [/usr/local/include]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include/c++/10.3.1] ==> [/srv/mer/toolings/SailfishOS-latest/opt/cross/aarch64-meego-linux-gnu/include/c++/10.3.1]
+        collapse include dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include/c++/10.3.1/aarch64-meego-linux-gnu] ==> [/srv/mer/toolings/SailfishOS-latest/opt/cross/aarch64-meego-linux-gnu/include/c++/10.3.1/aarch64-meego-linux-gnu]
+        collapse include dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include/c++/10.3.1/backward] ==> [/srv/mer/toolings/SailfishOS-latest/opt/cross/aarch64-meego-linux-gnu/include/c++/10.3.1/backward]
+        collapse include dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include] ==> [/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc/aarch64-meego-linux-gnu/10.3.1/include]
+        collapse include dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include-fixed] ==> [/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc/aarch64-meego-linux-gnu/10.3.1/include-fixed]
+        collapse include dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include] ==> [/srv/mer/toolings/SailfishOS-latest/opt/cross/aarch64-meego-linux-gnu/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/srv/mer/toolings/SailfishOS-latest/opt/cross/aarch64-meego-linux-gnu/include/c++/10.3.1;/srv/mer/toolings/SailfishOS-latest/opt/cross/aarch64-meego-linux-gnu/include/c++/10.3.1/aarch64-meego-linux-gnu;/srv/mer/toolings/SailfishOS-latest/opt/cross/aarch64-meego-linux-gnu/include/c++/10.3.1/backward;/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc/aarch64-meego-linux-gnu/10.3.1/include;/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc/aarch64-meego-linux-gnu/10.3.1/include-fixed;/srv/mer/toolings/SailfishOS-latest/opt/cross/aarch64-meego-linux-gnu/include;/usr/local/include;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/home/oles/sailfish/app-sources/harbour-amazfish/__cmake_systeminformation/CMakeFiles/CMakeScratch/TryCompile-PK9Qkc']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/make -f Makefile cmTC_c3421/fast]
+        ignore line: [/usr/bin/make  -f CMakeFiles/cmTC_c3421.dir/build.make CMakeFiles/cmTC_c3421.dir/build]
+        ignore line: [make[1]: Entering directory '/home/oles/sailfish/app-sources/harbour-amazfish/__cmake_systeminformation/CMakeFiles/CMakeScratch/TryCompile-PK9Qkc']
+        ignore line: [Building CXX object CMakeFiles/cmTC_c3421.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_c3421.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/aarch64-meego-linux-gnu-c++]
+        ignore line: [Target: aarch64-meego-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/opt/cross --mandir=/opt/cross/share/man --disable-bootstrap --with-bugurl=https://git.sailfishos.org/ --build=i486-meego-linux --with-isl=/home/abuild/rpmbuild/BUILD/gcc-arm-src-snapshot-10.3-2021.07/obj-i486-meego-linux/isl-install --host=i486-meego-linux --target=aarch64-meego-linux-gnu --with-sysroot=/opt/cross/aarch64-meego-linux-gnu/sys-root --disable-multilib --disable-multilib --enable-checking=release --disable-fixed-point --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-lto --enable-linker-build-id --disable-libmpx --enable-languages=c c++ lto --enable-threads=posix --enable-shared --disable-libgcj --disable-libcilkrts --enable-gnu-indirect-function --with-arch=armv8-a --build=i486-meego-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1) (GCC) ]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3421.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib' '-I' '/usr/include' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64']
+        ignore line: [ /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/cc1plus -quiet -v -I /usr/include -iprefix /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/ -isysroot / -D_GNU_SOURCE /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -march=armv8-a -mlittle-endian -mabi=lp64 -auxbase-strip CMakeFiles/cmTC_c3421.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/ccdB148V.s]
+        ignore line: [GNU C++14 (GCC) version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1) (aarch64-meego-linux-gnu)]
+        ignore line: [	compiled by GNU C version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1)  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [ignoring duplicate directory "/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/../../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include/c++/10.3.1"]
+        ignore line: [ignoring duplicate directory "/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/../../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include/c++/10.3.1/aarch64-meego-linux-gnu"]
+        ignore line: [ignoring duplicate directory "/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/../../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include/c++/10.3.1/backward"]
+        ignore line: [ignoring duplicate directory "/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/../../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include"]
+        ignore line: [ignoring duplicate directory "/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/../../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include-fixed"]
+        ignore line: [ignoring duplicate directory "/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/../../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include"]
+        ignore line: [ignoring duplicate directory "/usr/include"]
+        ignore line: [  as it is a non-system directory that duplicates a system directory]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include/c++/10.3.1]
+        ignore line: [ /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include/c++/10.3.1/aarch64-meego-linux-gnu]
+        ignore line: [ /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include/c++/10.3.1/backward]
+        ignore line: [ /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include]
+        ignore line: [ /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/include-fixed]
+        ignore line: [ /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [GNU C++14 (GCC) version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1) (aarch64-meego-linux-gnu)]
+        ignore line: [	compiled by GNU C version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1)  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version none]
+        ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+        ignore line: [Compiler executable checksum: 00000000000000000000000000000000]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3421.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib' '-I' '/usr/include' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64']
+        ignore line: [ as -v -I /usr/include -EL -march=armv8-a -mabi=lp64 -o CMakeFiles/cmTC_c3421.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccdB148V.s]
+        ignore line: [GNU assembler version 2.42 (aarch64-meego-linux-gnu) using BFD version (GNU Binutils) 2.42]
+        ignore line: [COMPILER_PATH=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_c3421.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib' '-I' '/usr/include' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64']
+        ignore line: [Linking CXX executable cmTC_c3421]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3421.dir/link.txt --verbose=1]
+        ignore line: [/usr/bin/c++  -v -Wl -v CMakeFiles/cmTC_c3421.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_c3421 ]
+        ignore line: [Using built-in specs.]
+        ignore line: [COLLECT_GCC=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/aarch64-meego-linux-gnu-c++]
+        ignore line: [COLLECT_LTO_WRAPPER=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/lto-wrapper]
+        ignore line: [Target: aarch64-meego-linux-gnu]
+        ignore line: [Configured with: ../configure --prefix=/opt/cross --mandir=/opt/cross/share/man --disable-bootstrap --with-bugurl=https://git.sailfishos.org/ --build=i486-meego-linux --with-isl=/home/abuild/rpmbuild/BUILD/gcc-arm-src-snapshot-10.3-2021.07/obj-i486-meego-linux/isl-install --host=i486-meego-linux --target=aarch64-meego-linux-gnu --with-sysroot=/opt/cross/aarch64-meego-linux-gnu/sys-root --disable-multilib --disable-multilib --enable-checking=release --disable-fixed-point --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-lto --enable-linker-build-id --disable-libmpx --enable-languages=c c++ lto --enable-threads=posix --enable-shared --disable-libgcj --disable-libcilkrts --enable-gnu-indirect-function --with-arch=armv8-a --build=i486-meego-linux]
+        ignore line: [Thread model: posix]
+        ignore line: [Supported LTO compression algorithms: zlib zstd]
+        ignore line: [gcc version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1) (GCC) ]
+        ignore line: [COMPILER_PATH=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/]
+        ignore line: [LIBRARY_PATH=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/:/lib/:/usr/lib/]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c3421' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib' '-I' '/usr/include' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64']
+        link line: [ /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/collect2 -plugin /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/liblto_plugin.so -plugin-opt=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccun4dTi.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --no-add-needed --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_c3421 /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtbegin.o -L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib -L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1 -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib -v CMakeFiles/cmTC_c3421.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtend.o /usr/lib/../lib64/crtn.o]
+          arg [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/collect2] ==> ignore
+          arg [-plugin] ==> ignore
+          arg [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/liblto_plugin.so] ==> ignore
+          arg [-plugin-opt=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/lto-wrapper] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccun4dTi.res] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lc] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+          arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+          arg [--sysroot=/] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--no-add-needed] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib/ld-linux-aarch64.so.1] ==> ignore
+          arg [-X] ==> ignore
+          arg [-EL] ==> ignore
+          arg [-maarch64linux] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_c3421] ==> ignore
+          arg [/usr/lib/../lib64/crt1.o] ==> obj [/usr/lib/../lib64/crt1.o]
+          arg [/usr/lib/../lib64/crti.o] ==> obj [/usr/lib/../lib64/crti.o]
+          arg [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtbegin.o] ==> obj [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtbegin.o]
+          arg [-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib] ==> dir [/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib]
+          arg [-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib] ==> dir [/srv/mer/targets/SailfishOS-5.0.0.62.default/lib]
+          arg [-L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1] ==> dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1]
+          arg [-L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc] ==> dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc]
+          arg [-L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64] ==> dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib] ==> dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_c3421.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtend.o] ==> obj [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtend.o]
+          arg [/usr/lib/../lib64/crtn.o] ==> obj [/usr/lib/../lib64/crtn.o]
+        ignore line: [collect2 version 10.3.1 20210621 (Sailfish OS gcc 10.3.1-1)]
+        ignore line: [/usr/bin/aarch64-meego-linux-gnu-ld -plugin /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/liblto_plugin.so -plugin-opt=/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../libexec/gcc/aarch64-meego-linux-gnu/10.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccun4dTi.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/ --build-id --no-add-needed --eh-frame-hdr -dynamic-linker /lib/ld-linux-aarch64.so.1 -X -EL -maarch64linux -o cmTC_c3421 /usr/lib/../lib64/crt1.o /usr/lib/../lib64/crti.o /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtbegin.o -L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib -L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1 -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib -v CMakeFiles/cmTC_c3421.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtend.o /usr/lib/../lib64/crtn.o]
+        ignore line: [GNU ld (GNU Binutils) 2.42]
+        ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_c3421' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib' '-L/srv/mer/targets/SailfishOS-5.0.0.62.default/lib' '-I' '/usr/include' '-shared-libgcc' '-march=armv8-a' '-mlittle-endian' '-mabi=lp64']
+        ignore line: [make[1]: Leaving directory '/home/oles/sailfish/app-sources/harbour-amazfish/__cmake_systeminformation/CMakeFiles/CMakeScratch/TryCompile-PK9Qkc']
+        ignore line: []
+        ignore line: []
+        collapse obj [/usr/lib/../lib64/crt1.o] ==> [/usr/lib64/crt1.o]
+        collapse obj [/usr/lib/../lib64/crti.o] ==> [/usr/lib64/crti.o]
+        collapse obj [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtbegin.o] ==> [/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtbegin.o]
+        collapse obj [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtend.o] ==> [/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtend.o]
+        collapse obj [/usr/lib/../lib64/crtn.o] ==> [/usr/lib64/crtn.o]
+        collapse library dir [/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib] ==> [/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib]
+        collapse library dir [/srv/mer/targets/SailfishOS-5.0.0.62.default/lib] ==> [/srv/mer/targets/SailfishOS-5.0.0.62.default/lib]
+        collapse library dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1] ==> [/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc/aarch64-meego-linux-gnu/10.3.1]
+        collapse library dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc] ==> [/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc]
+        collapse library dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib/../lib64] ==> [/srv/mer/toolings/SailfishOS-latest/opt/cross/aarch64-meego-linux-gnu/lib64]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/srv/mer/toolings/SailfishOS-latest/opt/cross/bin/../lib/gcc/aarch64-meego-linux-gnu/10.3.1/../../../../aarch64-meego-linux-gnu/lib] ==> [/srv/mer/toolings/SailfishOS-latest/opt/cross/aarch64-meego-linux-gnu/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/usr/lib64/crt1.o;/usr/lib64/crti.o;/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtbegin.o;/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc/aarch64-meego-linux-gnu/10.3.1/crtend.o;/usr/lib64/crtn.o]
+        implicit dirs: [/srv/mer/targets/SailfishOS-5.0.0.62.default/usr/lib;/srv/mer/targets/SailfishOS-5.0.0.62.default/lib;/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc/aarch64-meego-linux-gnu/10.3.1;/srv/mer/toolings/SailfishOS-latest/opt/cross/lib/gcc;/srv/mer/toolings/SailfishOS-latest/opt/cross/aarch64-meego-linux-gnu/lib64;/lib64;/usr/lib64;/srv/mer/toolings/SailfishOS-latest/opt/cross/aarch64-meego-linux-gnu/lib]
+        implicit fwks: []
+      
+      
+...

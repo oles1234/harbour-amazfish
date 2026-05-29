@@ -127,6 +127,10 @@ rm -rf %{buildroot}/usr/include/o2
 rm -f %{buildroot}/usr/lib/libo2.a
 rm -f %{buildroot}/usr/share/metainfo/harbour-amazfish-ui.appdata.xml
 
+# Strip specific binaries
+strip --strip-all %{buildroot}%{_bindir}/harbour-amazfish-ui
+strip --strip-all %{buildroot}%{_bindir}/harbour-amazfishd
+
 %files
 %defattr(-,root,root,-)
 %{_bindir}/%{name}-ui

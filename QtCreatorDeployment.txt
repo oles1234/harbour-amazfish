@@ -1,0 +1,2 @@
+/usr
+/home/oles/sailfish/app-sources/harbour-amazfish/harbour-amazfish-ui:bin
