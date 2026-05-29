@@ -3,3 +3,12 @@ harbour-amazfish.pro.user*
 3rdparty/
 build/
 CMakeLists.txt.*
+*.o
+*.so
+*.a
+moc_*.cpp
+*.moc
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
